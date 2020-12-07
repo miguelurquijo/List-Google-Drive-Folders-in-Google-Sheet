@@ -9,7 +9,7 @@ function listFilesInFolder() {
 //writes the headers for the spreadsheet
    var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Folders");
    sheet.appendRow(["Region", "Country", "Project","Folder","URL","Date Created", "Date Updated", "Project ID"]);
-   var folder1ID = "THE INITIAL OF THE LEVEL 1 FOLDER GOES HERE";
+   var folder1ID = "THE FOLDER ID INITIAL OF THE LEVEL 1 FOLDER GOES HERE";
    var folder1 = DriveApp.getFolderById(folder1ID);
    var content1 = folder1.getFolders()
    var cnt = 0;
